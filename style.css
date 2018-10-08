@@ -1,0 +1,725 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	color: #000;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* /////// end of css reset */
+
+/* GLOBAL SETTINGS */
+
+body {
+	font-family: Oswald, Roboto, Open Sans;
+	background: #ffffff;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1620px;
+	margin: 0 auto;
+}
+
+section:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.takeSurveyNowLink, .gettheBookNowLink {
+	display: inline-block;
+	text-decoration: none;
+	width: 280px;
+	text-align: center;
+	padding: 13px 0;
+	font: bold 16px Roboto;
+}
+
+.takeSurveyNowLink {
+	background: #f2d71e;	
+	color: #000;
+}
+
+.gettheBookNowLink {
+	color: #fff;
+	background: #e21116;
+}
+
+#bgwrapper {
+	background: #f8eecf; /* fallback mode */
+	/* chrome safari web browsers */
+	background: -webkit-linear-gradient(
+	top, #f8eecf 0%,
+	#ffffff 100%
+	);
+	/* for mozilla browsers */
+	background: -moz-linear-gradient(
+	top, #f8eecf 0%,
+	#ffffff 100%
+	);
+	/* recent browser support */
+	background: linear-gradient(
+	top, #f8eecf 0%,
+	#ffffff 100%
+	);
+}
+
+#main-content {
+	background: #fff;
+}
+
+/* END OF GLOBAL SETTINGS */
+
+/* SHAME HEADER */
+
+header {
+	background: #fff;
+	/* top and bottom 15px
+	 *left and right 0
+	 * spacing inside the header
+	 * */
+	padding: 15px 0;
+}
+
+header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* float grouping 1 to the left */ 
+#logo {
+	background: url(https://i.imgur.com/h80RSv3.png) no-repeat;
+	height: 40px;
+	width: 230px;
+	text-indent: -10000px;
+	float:left;
+}
+
+header nav h2 {
+	height: 0;
+	text-indent: -10000px;
+}
+
+header nav a {
+	text-decoration: none;
+	/* make middle spacing for the nav a tags */
+	display: inline-block;
+	padding: 12px 0;
+	font-family: Roboto;
+}
+
+/* from mozilla dev */
+/* represents  the first three li tags 
+ * [= -0+3, -1 + 3, -2 + 3, -3 + 3 */
+/*     = 3    =2      = 1     = 0  */
+header nav li:nth-child(-n+3) {
+	float: left;
+	margin-left: 25px;
+}
+
+/* calling the 4th child of li tags */
+/* watch thenetninja css tutorial about nth-child
+ * or read mozilla dev nth-child
+ * or google nth-child css
+ */
+header nav li:nth-child(4) {
+	float: right;
+}
+
+header nav li:nth-child(4) a {
+	background: url(https://i.imgur.com/fJJsotv.png) no-repeat left/12px 14px;
+	padding-left: 14px;
+}
+
+header nav li:nth-child(4) a {
+	color: #df113d;
+}
+
+/* END OF SHAME HEADER */
+
+/* SHAME BANNER */
+
+#lead-banner {
+	max-height: 695px;
+	overflow: hidden;
+	position: relative;
+	background:
+	linear-gradient(
+	rgba(0, 0, 0, 1.0),
+	rgba(0, 0, 0, 1.0)
+	);
+}
+
+#lead-banner:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* if I use #lead-banner img it will get the 2 img tags 
+ * I should be more specific 
+ * I'm using side by side the NinjaPSDtoHTMLSeries1
+ * the 09StylingtheBanner 
+ * watch also CSS tutorial for Beginners 12 - Selector specificity 
+ * I need to use the opacity 40% to make the linear-gradient work 
+ * They both work hand in hand. If not linear-gradient is  useless.*/
+#bannerimg {
+	width: 100%;
+	opacity: 0.4;
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 10%;
+	width: 100%;
+}
+
+.bannerbox {
+	float: left;
+}
+
+.bannerbox.left {
+	width: 47.25%;
+	
+}
+
+.authorbook {
+	padding-left: 30px;
+}
+
+.bannerbox.right {
+	width: 52%;
+	padding-top: 80px;
+}
+
+.banner-title, #lead-banner p {
+	color: #fff;	
+}
+
+/* font setup
+ * font: font-style<bold> font-size<55px>/line-height<67px> font-family<Oswald>
+ * line spacing between sentences measuring from the psd file 
+ * line height formula
+ * font-size  line spacing = line-height
+ * 60px      +     12px    =    72px
+ * */
+.banner-title {
+	font: 500 60px/72px Oswald;
+	
+}
+
+.banner-title strong {
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+#lead-banner p {
+	margin-top: 35px;
+	max-width: 720px;
+	font: 300 18px/26px Roboto;
+}
+
+#lead-banner a {
+	margin-top: 40px;
+	margin-left: 12px;
+}
+
+/* END OF SHAME BANNER */
+
+/* SHAME PROFILES SECTION */
+
+#shame-profiles {
+	padding-top: 105px;
+	/* background: #f8eecf; /* fallback mode */
+	/* chrome safari web browsers */
+	/*background: -webkit-linear-gradient(
+	top, #f8eecf 0%,
+	#ffffff 100%
+	);
+	/* for mozilla browsers */
+	/* background: -moz-linear-gradient(
+	top, #f8eecf 0%,
+	#ffffff 100%
+	);
+	/* recent browser support */
+	/* background: linear-gradient(
+	top, #f8eecf 0%,
+	#ffffff 100%
+	); */
+}
+
+#shame-profiles img {
+	float: right;
+	width: 798px;
+	height: 480px;
+}
+
+#shame-profiles .section1left {
+	float: left;
+	width: 46%;
+}
+
+#shame-profiles h2, h1, p {
+	padding-left: 5px;
+}
+
+#shame-profiles h2 {
+	padding-top: 40px;
+	display: inline-block;
+	color: #e21116;
+	font-size: 26px;
+	font-weight: normal;
+}
+
+#shame-profiles h1 {
+	margin-top: 25px;
+	font-size: 42px;
+	font-weight: 300;
+	line-height: 50px;
+}
+
+#shame-profiles .p-one {
+	margin-top: 30px;
+	font: 400 18px Roboto;
+}
+
+#shame-profiles .p-two {
+	margin-top: 28px;
+	font: 300 16px/21px Roboto;
+}
+
+#shame-profiles a {
+	margin-top: 35px;
+}
+
+#shame-profiles .takeSurveyNowLink {
+	margin-left: 13px;
+}
+
+/* END OF SHAME PROFILES SECTION */
+
+/* WHICH SHAME PROFILES */
+
+#whichShameProfiles {
+	padding-top: 142px;
+}
+
+#whichShameProfiles h2 {
+	margin: 0 auto 25px;
+	font-size: 45px;
+	width: 42.35%;
+}
+
+#whichShameProfiles ul {
+	list-style-type: none;
+}
+
+/* If I use float:left there is a incremental white space */
+#whichShameProfiles li {
+	display: inline-block;
+	width: 235px;
+	margin: 30px 42.50px;
+}
+
+#whichShameProfiles li h3 {
+	padding-top: 30px;
+	text-align: center;
+	font-size: 34px;
+	font-weight: 500px;
+}
+
+#whichShameProfiles li p {
+	padding-top: 25px;
+	text-align: center;
+	font-family: Roboto;
+	line-height: 26px;
+}
+
+/* END OF WHICH SHAME PROFILES */
+
+/* AUTHOR SHAME BOOK */
+
+#shameBook {
+	margin-top: 108px;
+	background: #f2d71e;
+	padding-left: 33px;
+	position: relative;
+	overflow: hidden;
+	max-height: 585px;
+}
+
+#shameBook h2 {
+	padding-top: 88px;
+	font-size: 23px;
+	line-height: 33px;
+	font-weight: 500;
+	width: 785px;
+	display: inline-block;
+}
+
+#shameBook .section3left {
+	width: 48%;
+}
+
+/* opacity used as an alternative to z-index in stacking
+ * css tricks and mozilla mdn */
+#shameBook img {
+	padding: 68px 88px 0 0;
+	float: right;
+	opacity: .99;
+}
+
+#shameBook p {
+	margin-top: 33px;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#shameBook .gettheBookNowLink {
+	margin-top: 50px;
+}
+
+#shameBook .orangeCircle {
+	background: #f1b41e;
+	width: 1080px;
+	height: 1080px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 10%;
+	left: 55%;
+}
+
+#shameBook .blackCircle {
+	background: #000;
+	width: 1080px;
+	height: 1080px;
+	border-radius: 50%;
+	position: absolute;
+	top: 20%;
+	left: 55%;
+}
+
+/* END OF AUTHOR SHAME BOOK */
+
+/* SHAME AUTHOR PROFILE */
+
+#shameAuthorProfile {
+	margin-top: 40px;
+	max-height: 735px;
+	overflow: hidden;
+	position: relative;
+}
+
+/* another way to hide and better header text for sections 
+ * stackoverflow Hide text using css
+ * Replacing the -9999px hack
+ * */
+#shameAuthorProfile h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 0;
+}
+
+/* Author Image Circles */
+
+#shameAuthorProfile .yellowCircle {
+	position: absolute;
+	background: #f2d71e;
+	width: 294px;
+	height: 294px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.authorImageCircle {
+	margin-left: 100px;
+	margin-top: 65px;
+	width: 506px;
+	height: 506px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+	opacity: .99;
+}
+
+.authorImageCircle img {
+	width: 100%;
+	height: auto;
+	margin-bottom: -15px;
+}
+
+#shameAuthorProfile .orangeCircle {
+	position: absolute;
+	background: #f1b41e;
+	width: 131px;
+	height: 131px;
+	border-radius: 50%;
+	display: inline-block;
+	top: 435px;
+	left: 480px;
+}
+
+#shameAuthorProfile .blackCircle {
+	position: absolute;
+	background: #000;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	display: inline-block;
+	top: 510px;
+	left: 560px;
+}
+
+/* End of Author Image Circles */
+
+.section4Right {
+	margin-top: 75px;
+	float: right;
+	width: 46%;
+	padding-right: 25px;
+}
+
+.section4Right h2 {
+	color: #e21116;
+	font-size: 30px;
+	font-weight: 500; /* medium */
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+
+.section4Right h1 {
+	font-size: 44px;
+	font-weight: 500;
+	margin-bottom: 53px;
+}
+
+.section4Right p {
+	margin: 30px 0;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+/* END OF SHAME AUTHOR PROFILE */
+
+/* FOOTER */
+
+footer {
+	margin-top: 145px;
+	padding-top: 68px;
+	background: #101010;
+	color: #fff;
+	height: 737px;
+}
+
+.contact, .send-inquiry {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contact {
+	width: 749px;
+	height: 457px;
+	background: #1c1c1c;
+}
+
+.send-inquiry {
+	width: 797px;
+	height: 457px;
+	margin-left: 50px;
+}
+
+.contact a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.contact ul {
+	list-style-type: none;
+}
+.contact_persons {
+	margin-top: 4px;
+	margin-left: 46px;
+}
+
+.contact_persons h1, #socialnavh, .send-inquiry h1{
+	font-family: Oswald;
+	font-size: 34px;
+	font-weight: 500;
+}
+
+#socialnavh {
+	margin-left: 46px;
+	margin-top: 55px;
+}
+
+.contact_persons li:nth-child(odd) {
+	padding-top: 50px;
+}
+
+.contact_persons li:nth-child(even) {
+	margin-top: 16px;
+	margin-left: 7px;
+	font-family: Roboto;
+	font-size: 18px;
+}
+
+#social-nav {
+	margin-top: 31px;
+	margin-left: 56px;
+}
+
+#social-nav li {
+	float: left;
+	margin-right: 12px;
+	width: 47px;
+	height: 47px;
+	background: url(https://i.imgur.com/2YUeEbI.png) no-repeat;
+	/* hide text */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+#social-nav li:nth-child(2) {
+	background-position: -60px 0;
+}
+
+#social-nav li:nth-child(3) {
+	background-position: -116px 0;
+}
+
+#social-nav li:nth-child(4) {
+	background-position: -175px 0;
+}
+
+#social-nav li:nth-child(5) {
+	background-position: -233px 0;
+}
+
+.send-inquiry h1, .send-inquiry p {
+	margin: 26px 0 26px 15px;
+}
+
+.send-inquiry p {
+	font-family: Roboto;
+	font-size: 18px;
+}
+
+#full_name, #phone_number, #email_add, #message {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#full_name, #phone_number {
+	width: 360px;
+	height: 48px;
+}
+
+#email_add {
+	width: 758px;
+	height: 48px;
+}
+
+#message {
+	width: 772px;
+	height: 105px;
+}
+
+.send-inquiry a {
+	margin-top: 22px;
+	margin-left: 65%;
+}
+
+/* END OF FOOTER */
+
