@@ -98,6 +98,10 @@ input, select {
 
 /* GLOBAL SETTINGS */
 
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto');
+
 body {
 	font-family: Oswald, Roboto, Open Sans;
 	background: #ffffff;
