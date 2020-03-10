@@ -7,200 +7,187 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+  quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+  content: '';
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-	color: #000;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #000;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input, select {
-    vertical-align:middle;
+  vertical-align: middle;
 }
 
 /* /////// end of css reset */
-
 /* GLOBAL SETTINGS */
-
 /* Fonts */
-
-
-
 body {
-	font-family: Oswald, Roboto, Open Sans;
-	background: #ffffff;
-	width: 100%;
-	height: 100%;
+  font-family: Oswald, Roboto, Open Sans;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
-	width: 100%;
-	max-width: 1620px;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
 }
 
 section:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .takeSurveyNowLink, .gettheBookNowLink {
-	display: inline-block;
-	text-decoration: none;
-	width: 280px;
-	text-align: center;
-	padding: 13px 0;
-	font: bold 16px Roboto;
+  display: inline-block;
+  text-decoration: none;
+  width: 280px;
+  text-align: center;
+  padding: 13px 0;
+  font: bold 16px Roboto;
 }
 
 .takeSurveyNowLink {
-	background: #f2d71e;	
-	color: #000;
+  background: #f2d71e;
+  color: #000;
 }
 
 .gettheBookNowLink {
-	color: #fff;
-	background: #e21116;
+  color: #fff;
+  background: #e21116;
 }
 
 #bgwrapper {
-	background: #f8eecf; /* fallback mode */
-	/* chrome safari web browsers */
-	background: -webkit-linear-gradient(
-	top, #f8eecf 0%,
-	#ffffff 100%
-	);
-	/* for mozilla browsers */
-	background: -moz-linear-gradient(
-	top, #f8eecf 0%,
-	#ffffff 100%
-	);
-	/* recent browser support */
-	background: linear-gradient(
-	top, #f8eecf 0%,
-	#ffffff 100%
-	);
+  background: #f8eecf;
+  /* fallback mode */
+  /* chrome safari web browsers */
+  /* for mozilla browsers */
+  /* recent browser support */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8eecf), to(#ffffff));
+  background: linear-gradient(top, #f8eecf 0%, #ffffff 100%);
 }
 
 #main-content {
-	background: #fff;
+  background: #fff;
 }
 
 /* END OF GLOBAL SETTINGS */
-
 /* SHAME HEADER */
-
 header {
-	background: #fff;
-	/* top and bottom 15px
+  background: #fff;
+  /* top and bottom 15px
 	 *left and right 0
 	 * spacing inside the header
 	 * */
-	padding: 15px 0;
+  padding: 15px 0;
 }
 
 header:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
-/* float grouping 1 to the left */ 
+
+/* float grouping 1 to the left */
 #logo {
-	background: url(https://i.imgur.com/h80RSv3.png) no-repeat;
-	height: 40px;
-	width: 230px;
-	text-indent: -10000px;
-	float:left;
+  font-size: 38px;
+  font-family: Oswald;
+  font-weight: 600;
+  color: #000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  float: left;
 }
 
 header nav h2 {
-	height: 0;
-	text-indent: -10000px;
+  height: 0;
+  text-indent: -10000px;
 }
 
 header nav a {
-	text-decoration: none;
-	/* make middle spacing for the nav a tags */
-	display: inline-block;
-	padding: 12px 0;
-	font-family: Roboto;
+  text-decoration: none;
+  /* make middle spacing for the nav a tags */
+  display: inline-block;
+  padding: 12px 0;
+  font-family: Roboto;
 }
 
 /* from mozilla dev */
@@ -208,8 +195,8 @@ header nav a {
  * [= -0+3, -1 + 3, -2 + 3, -3 + 3 */
 /*     = 3    =2      = 1     = 0  */
 header nav li:nth-child(-n+3) {
-	float: left;
-	margin-left: 25px;
+  float: left;
+  margin-left: 25px;
 }
 
 /* calling the 4th child of li tags */
@@ -218,38 +205,34 @@ header nav li:nth-child(-n+3) {
  * or google nth-child css
  */
 header nav li:nth-child(4) {
-	float: right;
+  float: right;
 }
 
 header nav li:nth-child(4) a {
-	background: url(https://i.imgur.com/fJJsotv.png) no-repeat left/12px 14px;
-	padding-left: 14px;
+  background: url(https://i.imgur.com/fJJsotv.png) no-repeat left/12px 14px;
+  padding-left: 14px;
 }
 
 header nav li:nth-child(4) a {
-	color: #df113d;
+  color: #df113d;
 }
 
 /* END OF SHAME HEADER */
-
 /* SHAME BANNER */
-
 #lead-banner {
-	max-height: 695px;
-	overflow: hidden;
-	position: relative;
-	background:
-	linear-gradient(
-	rgba(0, 0, 0, 1.0),
-	rgba(0, 0, 0, 1.0)
-	);
+  max-height: 695px;
+  overflow: hidden;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(black));
+  background: linear-gradient(black, black);
 }
 
 #lead-banner:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
+
 /* if I use #lead-banner img it will get the 2 img tags 
  * I should be more specific 
  * I'm using side by side the NinjaPSDtoHTMLSeries1
@@ -258,36 +241,35 @@ header nav li:nth-child(4) a {
  * I need to use the opacity 40% to make the linear-gradient work 
  * They both work hand in hand. If not linear-gradient is  useless.*/
 #bannerimg {
-	width: 100%;
-	opacity: 0.4;
+  width: 100%;
+  opacity: 0.4;
 }
 
 .banner-overlay {
-	position: absolute;
-	top: 10%;
-	width: 100%;
+  position: absolute;
+  top: 10%;
+  width: 100%;
 }
 
 .bannerbox {
-	float: left;
+  float: left;
 }
 
 .bannerbox.left {
-	width: 47.25%;
-	
+  width: 47.25%;
 }
 
 .authorbook {
-	padding-left: 30px;
+  padding-left: 30px;
 }
 
 .bannerbox.right {
-	width: 52%;
-	padding-top: 80px;
+  width: 52%;
+  padding-top: 80px;
 }
 
 .banner-title, #lead-banner p {
-	color: #fff;	
+  color: #fff;
 }
 
 /* font setup
@@ -298,434 +280,749 @@ header nav li:nth-child(4) a {
  * 60px      +     12px    =    72px
  * */
 .banner-title {
-	font: 500 60px/72px Oswald;
-	
+  font: 500 60px/72px Oswald;
 }
 
 .banner-title strong {
-	text-transform: uppercase;
-	font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 #lead-banner p {
-	margin-top: 35px;
-	max-width: 720px;
-	font: 300 18px/26px Roboto;
+  margin-top: 35px;
+  max-width: 720px;
+  font: 300 18px/26px Roboto;
 }
 
 #lead-banner a {
-	margin-top: 40px;
-	margin-left: 12px;
+  margin-top: 40px;
+  margin-left: 12px;
 }
 
 /* END OF SHAME BANNER */
-
 /* SHAME PROFILES SECTION */
-
 #shame-profiles {
-	padding-top: 105px;
-	/* background: #f8eecf; /* fallback mode */
-	/* chrome safari web browsers */
-	/*background: -webkit-linear-gradient(
+  padding-top: 105px;
+  /* background: #f8eecf; /* fallback mode */
+  /* chrome safari web browsers */
+  /*background: -webkit-linear-gradient(
 	top, #f8eecf 0%,
 	#ffffff 100%
 	);
 	/* for mozilla browsers */
-	/* background: -moz-linear-gradient(
+  /* background: -moz-linear-gradient(
 	top, #f8eecf 0%,
 	#ffffff 100%
 	);
 	/* recent browser support */
-	/* background: linear-gradient(
+  /* background: linear-gradient(
 	top, #f8eecf 0%,
 	#ffffff 100%
 	); */
 }
 
+#shame-profiles .sp-h2 {
+  display: none;
+  font-size: 0;
+  height: 0;
+}
+
 #shame-profiles img {
-	float: right;
-	width: 798px;
-	height: 480px;
+  float: right;
+  width: 798px;
+  height: 480px;
 }
 
 #shame-profiles .section1left {
-	float: left;
-	width: 46%;
+  float: left;
+  width: 46%;
 }
 
-#shame-profiles h2, h1, p {
-	padding-left: 5px;
+#shame-profiles h2, #shame-profiles h1, #shame-profiles p {
+  padding-left: 5px;
 }
 
 #shame-profiles h2 {
-	padding-top: 40px;
-	display: inline-block;
-	color: #e21116;
-	font-size: 26px;
-	font-weight: normal;
+  padding-top: 40px;
+  display: inline-block;
+  color: #e21116;
+  font-size: 26px;
+  font-weight: normal;
 }
 
 #shame-profiles h1 {
-	margin-top: 25px;
-	font-size: 42px;
-	font-weight: 300;
-	line-height: 50px;
+  margin-top: 25px;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 50px;
 }
 
 #shame-profiles .p-one {
-	margin-top: 30px;
-	font: 400 18px Roboto;
+  margin-top: 30px;
+  font: 400 18px Roboto;
 }
 
 #shame-profiles .p-two {
-	margin-top: 28px;
-	font: 300 16px/21px Roboto;
+  margin-top: 28px;
+  font: 300 16px/21px Roboto;
 }
 
 #shame-profiles a {
-	margin-top: 35px;
+  margin-top: 35px;
 }
 
 #shame-profiles .takeSurveyNowLink {
-	margin-left: 13px;
+  margin-left: 13px;
 }
 
 /* END OF SHAME PROFILES SECTION */
-
 /* WHICH SHAME PROFILES */
-
 #whichShameProfiles {
-	padding-top: 142px;
+  padding-top: 142px;
+  /* If I use float:left there is a incremental white space */
 }
 
 #whichShameProfiles h2 {
-	margin: 0 auto 25px;
-	font-size: 45px;
-	width: 42.35%;
+  margin: 0 auto 25px;
+  font-size: 45px;
+  width: 42.35%;
 }
 
 #whichShameProfiles ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
-/* If I use float:left there is a incremental white space */
 #whichShameProfiles li {
-	display: inline-block;
-	width: 235px;
-	margin: 30px 42.50px;
+  display: inline-block;
+  width: 235px;
+  margin: 30px 42.50px;
 }
 
 #whichShameProfiles li h3 {
-	padding-top: 30px;
-	text-align: center;
-	font-size: 34px;
-	font-weight: 500px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500px;
 }
 
 #whichShameProfiles li p {
-	padding-top: 25px;
-	text-align: center;
-	font-family: Roboto;
-	line-height: 26px;
+  padding-top: 25px;
+  text-align: center;
+  font-family: Roboto;
+  line-height: 26px;
 }
 
 /* END OF WHICH SHAME PROFILES */
-
 /* AUTHOR SHAME BOOK */
-
 #shameBook {
-	margin-top: 108px;
-	background: #f2d71e;
-	padding-left: 33px;
-	position: relative;
-	overflow: hidden;
-	max-height: 585px;
+  margin-top: 108px;
+  background: #f2d71e;
+  padding-left: 33px;
+  position: relative;
+  overflow: hidden;
+  max-height: 585px;
+  /* opacity used as an alternative to z-index in stacking
+  * css tricks and mozilla mdn */
+}
+
+#shameBook h1 {
+  display: none;
+  height: 0;
+  overflow: hidden;
 }
 
 #shameBook h2 {
-	padding-top: 88px;
-	font-size: 23px;
-	line-height: 33px;
-	font-weight: 500;
-	width: 785px;
-	display: inline-block;
+  padding-top: 88px;
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  max-width: 785px;
+  width: 100%;
+  display: inline-block;
 }
 
 #shameBook .section3left {
-	width: 48%;
+  width: 48%;
 }
 
-/* opacity used as an alternative to z-index in stacking
- * css tricks and mozilla mdn */
 #shameBook img {
-	padding: 68px 88px 0 0;
-	float: right;
-	opacity: .99;
+  padding: 68px 88px 0 0;
+  float: right;
+  opacity: .99;
 }
 
 #shameBook p {
-	margin-top: 33px;
-	font-family: Roboto;
-	font-size: 16px;
-	line-height: 24px;
+  margin-top: 33px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 #shameBook .gettheBookNowLink {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
 #shameBook .orangeCircle {
-	background: #f1b41e;
-	width: 1080px;
-	height: 1080px;
-	border-radius: 50%;
-	position: absolute;
-	bottom: 10%;
-	left: 55%;
+  background: #f1b41e;
+  width: 1080px;
+  height: 1080px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+  left: 55%;
 }
 
 #shameBook .blackCircle {
-	background: #000;
-	width: 1080px;
-	height: 1080px;
-	border-radius: 50%;
-	position: absolute;
-	top: 20%;
-	left: 55%;
+  background: #000;
+  width: 1080px;
+  height: 1080px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 55%;
 }
 
 /* END OF AUTHOR SHAME BOOK */
-
 /* SHAME AUTHOR PROFILE */
-
 #shameAuthorProfile {
-	margin-top: 40px;
-	max-height: 735px;
-	overflow: hidden;
-	position: relative;
+  margin-top: 40px;
+  max-height: 735px;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* another way to hide and better header text for sections 
+   * stackoverflow Hide text using css
+   * Replacing the -9999px hack
+   * */
+  /* Author Image Circles */
 }
 
-/* another way to hide and better header text for sections 
- * stackoverflow Hide text using css
- * Replacing the -9999px hack
- * */
 #shameAuthorProfile h3 {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	height: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 0;
 }
 
-/* Author Image Circles */
+#shameAuthorProfile .section4Left {
+  width: 50%;
+  position: relative;
+}
 
 #shameAuthorProfile .yellowCircle {
-	position: absolute;
-	background: #f2d71e;
-	width: 294px;
-	height: 294px;
-	border-radius: 50%;
-	display: inline-block;
+  position: absolute;
+  background: #f2d71e;
+  max-width: 294px;
+  width: 100%;
+  max-height: 294px;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.authorImageCircle {
-	margin-left: 100px;
-	margin-top: 65px;
-	width: 506px;
-	height: 506px;
-	border-radius: 50%;
-	overflow: hidden;
-	display: inline-block;
-	opacity: .99;
+#shameAuthorProfile .authorImageCircle {
+  margin-left: 100px;
+  margin-top: 65px;
+  max-width: 506px;
+  width: 100%;
+  max-height: 506px;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  opacity: .99;
 }
 
-.authorImageCircle img {
-	width: 100%;
-	height: auto;
-	margin-bottom: -15px;
+#shameAuthorProfile .authorImageCircle img {
+  width: 100%;
+  height: auto;
+  margin-bottom: -15px;
 }
 
 #shameAuthorProfile .orangeCircle {
-	position: absolute;
-	background: #f1b41e;
-	width: 131px;
-	height: 131px;
-	border-radius: 50%;
-	display: inline-block;
-	top: 435px;
-	left: 480px;
+  position: absolute;
+  background: #f1b41e;
+  max-width: 131px;
+  width: 100%;
+  max-height: 131px;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+  top: 435px;
+  left: 480px;
 }
 
 #shameAuthorProfile .blackCircle {
-	position: absolute;
-	background: #000;
-	width: 64px;
-	height: 64px;
-	border-radius: 50%;
-	display: inline-block;
-	top: 510px;
-	left: 560px;
+  position: absolute;
+  background: #000;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-block;
+  top: 510px;
+  left: 560px;
 }
 
 /* End of Author Image Circles */
-
 .section4Right {
-	margin-top: 75px;
-	float: right;
-	width: 46%;
-	padding-right: 25px;
+  margin-top: 75px;
+  float: right;
+  width: 46%;
+  padding-right: 25px;
 }
 
 .section4Right h2 {
-	color: #e21116;
-	font-size: 30px;
-	font-weight: 500; /* medium */
-	margin-bottom: 20px;
-	padding-left: 5px;
+  color: #e21116;
+  font-size: 30px;
+  font-weight: 500;
+  /* medium */
+  margin-bottom: 20px;
+  padding-left: 5px;
 }
 
 .section4Right h1 {
-	font-size: 44px;
-	font-weight: 500;
-	margin-bottom: 53px;
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 53px;
 }
 
 .section4Right p {
-	margin: 30px 0;
-	font-family: Roboto;
-	font-size: 16px;
-	line-height: 23px;
+  margin: 30px 0;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 23px;
 }
 
 /* END OF SHAME AUTHOR PROFILE */
-
 /* FOOTER */
-
 footer {
-	margin-top: 145px;
-	padding-top: 68px;
-	background: #101010;
-	color: #fff;
-	height: 737px;
+  margin-top: 145px;
+  padding-top: 68px;
+  background: #101010;
+  color: #fff;
+  height: 737px;
 }
 
 .contact, .send-inquiry {
-	display: inline-block;
-	vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .contact {
-	width: 749px;
-	height: 457px;
-	background: #1c1c1c;
+  width: 749px;
+  height: 457px;
+  background: #1c1c1c;
 }
 
 .send-inquiry {
-	width: 797px;
-	height: 457px;
-	margin-left: 50px;
+  width: 797px;
+  height: 457px;
+  margin-left: 50px;
 }
 
 .contact a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact ul {
-	list-style-type: none;
+  list-style-type: none;
 }
+
 .contact_persons {
-	margin-top: 4px;
-	margin-left: 46px;
-}
-
-.contact_persons h1, #socialnavh, .send-inquiry h1{
-	font-family: Oswald;
-	font-size: 34px;
-	font-weight: 500;
-}
-
-#socialnavh {
-	margin-left: 46px;
-	margin-top: 55px;
+  margin-top: 4px;
+  margin-left: 46px;
 }
 
 .contact_persons li:nth-child(odd) {
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
 .contact_persons li:nth-child(even) {
-	margin-top: 16px;
-	margin-left: 7px;
-	font-family: Roboto;
-	font-size: 18px;
+  margin-top: 16px;
+  margin-left: 7px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.contact_persons h1, #socialnavh, .send-inquiry h1 {
+  font-family: Oswald;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+#socialnavh {
+  margin-left: 46px;
+  margin-top: 55px;
 }
 
 #social-nav {
-	margin-top: 31px;
-	margin-left: 56px;
+  margin-top: 31px;
+  margin-left: 56px;
 }
 
 #social-nav li {
-	float: left;
-	margin-right: 12px;
-	width: 47px;
-	height: 47px;
-	background: url(https://i.imgur.com/2YUeEbI.png) no-repeat;
-	/* hide text */
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden
+  float: left;
+  margin-right: 12px;
+  width: 47px;
+  height: 47px;
+  background: url(https://i.imgur.com/2YUeEbI.png) no-repeat;
+  /* hide text */
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #social-nav li:nth-child(2) {
-	background-position: -60px 0;
+  background-position: -60px 0;
 }
 
 #social-nav li:nth-child(3) {
-	background-position: -116px 0;
+  background-position: -116px 0;
 }
 
 #social-nav li:nth-child(4) {
-	background-position: -175px 0;
+  background-position: -175px 0;
 }
 
 #social-nav li:nth-child(5) {
-	background-position: -233px 0;
+  background-position: -233px 0;
 }
 
 .send-inquiry h1, .send-inquiry p {
-	margin: 26px 0 26px 15px;
-}
-
-.send-inquiry p {
-	font-family: Roboto;
-	font-size: 18px;
-}
-
-#full_name, #phone_number, #email_add, #message {
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-#full_name, #phone_number {
-	width: 360px;
-	height: 48px;
-}
-
-#email_add {
-	width: 758px;
-	height: 48px;
-}
-
-#message {
-	width: 772px;
-	height: 105px;
+  margin: 26px 0 26px 15px;
 }
 
 .send-inquiry a {
-	margin-top: 22px;
-	margin-left: 65%;
+  margin-top: 22px;
+  margin-left: 65%;
+}
+
+.send-inquiry p {
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+#full_name, #phone_number, #email_add, #message {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#full_name, #phone_number {
+  width: 360px;
+  height: 48px;
+}
+
+#email_add {
+  width: 758px;
+  height: 48px;
+}
+
+#message {
+  width: 772px;
+  height: 105px;
 }
 
 /* END OF FOOTER */
+@media screen and (max-width: 768px) {
+  .takeSurveyNowLink, .gettheBookNowLink {
+    width: 140px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .bannerbox.left {
+    width: 38.25%;
+  }
+  .authorbook {
+    width: 85%;
+  }
+  .bannerbox.right {
+    padding-top: 10px;
+  }
+  .banner-title {
+    font: 500 28px/45px Oswald;
+  }
+  #lead-banner p {
+    margin-top: 1rem;
+    font: 300 12px/18px Roboto;
+  }
+  #shame-profiles {
+    padding-top: 3rem;
+  }
+  #shame-profiles .section1left {
+    width: 45%;
+    float: none;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  #shame-profiles img {
+    width: 55%;
+    height: 20%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    float: none;
+    margin-top: 4rem;
+  }
+  #shame-profiles h1 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  #shame-profiles h2 {
+    padding-top: 1rem;
+  }
+  #shame-profiles .sp-section-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #shame-profiles .p-one {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+  #shame-profiles .p-two {
+    margin-top: 1rem;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #shame-profiles a {
+    margin-top: 1rem;
+  }
+  #whichShameProfiles {
+    padding-top: 2.5rem;
+  }
+  #whichShameProfiles h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  #whichShameProfiles ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  #whichShameProfiles li h3 {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+  #whichShameProfiles li p {
+    padding-top: 16px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  #whichShameProfiles img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  #shameBook {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+  }
+  #shameBook h2 {
+    padding-top: 1rem;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #shameBook .section3left, #shameBook .section3right {
+    width: 50%;
+  }
+  #shameBook .section3left {
+    z-index: 4;
+  }
+  #shameBook .section3right {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+  }
+  #shameBook .orangeCircle, #shameBook .blackCircle {
+    left: -8%;
+  }
+  #shameBook img {
+    float: none;
+    position: relative;
+    width: 75%;
+    padding: 0;
+    padding-left: 7rem;
+    top: 18%;
+  }
+  #shameBook p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 2rem;
+  }
+  #shameBook .gettheBookNowLink {
+    margin-top: 1rem;
+  }
+  #shameAuthorProfile {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-height: 585px;
+    overflow: visible;
+    margin-top: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #shameAuthorProfile h3 {
+    display: none;
+  }
+  #shameAuthorProfile .section4Left {
+    width: 45%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  #shameAuthorProfile .yellowCircle {
+    max-width: 160px;
+    max-height: 160px;
+  }
+  #shameAuthorProfile .authorImageCircle {
+    margin-left: 60px;
+    margin-top: 38px;
+    max-width: 254px;
+    max-height: 254px;
+  }
+  #shameAuthorProfile .orangeCircle {
+    max-width: 55px;
+    max-height: 55px;
+    top: 233px;
+    left: 250px;
+  }
+  #shameAuthorProfile .blackCircle {
+    width: 32px;
+    height: 32px;
+    top: 264px;
+    left: 286px;
+  }
+  #shameAuthorProfile .section4Right {
+    float: none;
+    line-height: 15px;
+  }
+  #shameAuthorProfile .section4Right h1 {
+    font-size: 31px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  #shameAuthorProfile .section4Right h2 {
+    font-size: 24px;
+  }
+  #shameAuthorProfile .section4Right p {
+    font-size: 12px;
+  }
+  footer {
+    height: 100%;
+  }
+  footer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  footer input[type="submit"] {
+    margin-top: 1rem;
+    margin-left: 20px;
+    border: 0;
+  }
+  .send-inquiry {
+    width: 100%;
+    margin-left: 0;
+    height: inherit;
+  }
+  .contact {
+    width: 100%;
+  }
+  #full_name, #phone_number, #email_add, #message {
+    width: 100%;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .takeSurveyNowLink, .gettheBookNowLink {
+    width: 95px;
+  }
+  #lead-banner a {
+    margin-top: 1rem;
+  }
+  #bannerimg {
+    height: 255px;
+  }
+  .bannerbox.left {
+    width: 46.25%;
+  }
+  .authorbook {
+    width: 100%;
+    padding-left: 0;
+  }
+  .banner-title {
+    font: 500 16px/20px Oswald;
+  }
+  #shame-profiles .sp-section-div {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  #shame-profiles img, #shame-profiles .section1left {
+    width: 100%;
+  }
+  #whichShameProfiles li {
+    display: block;
+    width: 200px;
+    margin: 0.5rem;
+  }
+  #shameBook h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #shameBook p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 1rem;
+  }
+  #shameBook img {
+    width: 100%;
+    padding-left: 1rem;
+    top: 0;
+  }
+  #shameAuthorProfile {
+    max-height: 100%;
+  }
+  #shameAuthorProfile .section4Left {
+    width: 80%;
+    margin-top: 2rem;
+  }
+  #shameAuthorProfile .section4Right {
+    width: 100%;
+  }
+  #shameAuthorProfile .section4Right h1, #shameAuthorProfile .section4Right h2 {
+    text-align: center;
+  }
+  #shameAuthorProfile .section4Right p {
+    margin: 1rem 2rem;
+  }
+  footer {
+    margin-top: 0;
+  }
+}
