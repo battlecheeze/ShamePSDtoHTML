@@ -960,6 +960,7 @@ footer {
   }
   #full_name, #phone_number, #email_add, #message {
     width: 100%;
+    margin-left: 0;
   }
 }
 
