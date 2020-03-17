@@ -726,7 +726,7 @@ footer {
 }
 
 /* END OF FOOTER */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .takeSurveyNowLink, .gettheBookNowLink {
     width: 140px;
     font-weight: bold;
@@ -739,13 +739,16 @@ footer {
     width: 85%;
   }
   .bannerbox.right {
-    padding-top: 10px;
+    padding-top: 1px;
   }
   .banner-title {
     font: 500 28px/45px Oswald;
   }
+  #lead-banner a {
+    margin-top: 0.7rem;
+  }
   #lead-banner p {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font: 300 12px/18px Roboto;
   }
   #shame-profiles {
